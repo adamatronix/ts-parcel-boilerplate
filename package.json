@@ -14,9 +14,11 @@
     "README.md"
   ],
   "scripts": {
-    "start": "parcel src/index.html",
+    "start": "parcel src/index.html --dist-dir temp",
     "build": "parcel build",
-    "test": "echo \"Error: no test specified\" && exit 1"
+    "clean": "rimraf dist",
+    "test": "echo \"Error: no test specified\" && exit 1",
+    "compile": "npm run clean && tsc"
   },
   "author": "",
   "license": "ISC",
